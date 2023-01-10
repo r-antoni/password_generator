@@ -27,6 +27,11 @@ h2{
     margin-bottom: 100px;
 }
 
+label{
+    color: #D5D4D8;
+    font-size: 15px;
+}
+
 button{
     display: inline-block;
     height: 50px;
@@ -41,6 +46,7 @@ button{
     border: none;
     color: #D5D4D8;
     font-size: 14px;
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 
@@ -59,12 +65,4 @@ p{
     height: 40px;
     padding-top: 20px;
     margin: 40px 30px 20px 30px;
-}
-
-.copy1{
-    margin: 0px 100px 30px 30px;
-}
-
-.copy2{
-    margin: 0px 30px 30px 100px;
 }
