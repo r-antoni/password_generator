@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="flex flex-col justify-center items-center">
+        <div>
+            <h1>Generate A <br><span>Random Password</span></h1>
+            <h2>Never use an insecure password anymore.</h2>
+        </div>
+        <div class="flex flex-col max-w-lg justify-center items-center font-semibold text-lg">
+            <p>Password Length</p>
+            <div class="bg-slate-400 flex items-center rounded-xl w-full">
+                <button id="decrement " class="text-3xl px-5 pb-2" onclick="stepper(this)"> - </button>
+                <input type="number" id="length" class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none text-center bg-transparent focus:outline-none" min="6" max="24" value="16" step="1" readonly>
+                <button id="increment" class="text-2xl px-5 pb-1" onclick="stepper(this)"> + </button>
+            </div>
+        </div>
+        <div>
+            <button id="generate">GENERATE PASSWORDS</button>
+        </div>
+        <hr>
+        <div>
+            <p id="password1"></p>
+            <p id="password2"></p>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
