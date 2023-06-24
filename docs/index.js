@@ -24,20 +24,19 @@ function randomChar(){
 }
 
 function randomPassword1(){
-    for(let i = 0; i < lengthVal; i++){
+    for(let i = 1; i <= lengthVal; i++){
         generatedPass1 += randomChar()
         password1.textContent = generatedPass1
     } 
 }
 
 function randomPassword2(){
-    for(let i = 0; i < lengthVal; i++){
+    for(let i = 1; i <= lengthVal; i++){
         generatedPass2 += randomChar()
         password2.textContent = generatedPass2
     }  
 }
 
-    
 const stepper = (btn) =>{
     let id = btn.getAttribute("id");
     let min = length.getAttribute("min");
@@ -52,4 +51,3 @@ const stepper = (btn) =>{
     }
     lengthVal = newValue
 }
-console.log(lengthVal)
