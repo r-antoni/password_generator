@@ -92,7 +92,7 @@ return res.json();
     let fact = (data.text)
     catFact.innerText = fact
 }).catch (err =>{
-
+    console.log(err)
 })
 
 
