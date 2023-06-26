@@ -13,6 +13,7 @@ let generatedPass2 = ""
 let lengthVal = 16;
 let isGenerated = false;
 
+//Stepper Button
 const stepper = (btn) =>{
     let id = btn.getAttribute("id");
     let min = length.getAttribute("min");
@@ -28,6 +29,7 @@ const stepper = (btn) =>{
     lengthVal = newValue
 }
 
+//Generate Random Password Button
 generateBtn.addEventListener("click", () =>{
     generatedPass1 = ""
     generatedPass2 = ""
@@ -56,6 +58,7 @@ const randomPassword2 = () => {
     }  
 }
 
+//Copy Button
 copyBtn1.addEventListener("click", ()=>{
     const textarea = document.createElement("textarea");
     const pass1 = password1.innerText;
@@ -86,6 +89,7 @@ copyBtn2.addEventListener("click", ()=>{
     alert("Password 2 copied to clipboard !")
 })
 
+//Random catfact fetch function
 fetch('https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1').then (res=>{
 return res.json();
 }).then (data =>{

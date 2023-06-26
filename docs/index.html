@@ -14,6 +14,7 @@
             <h1 class="font-bold text-5xl pt-10">Generate A <br><span class="text-[#10B981]">Random Password</span></h1>
             <h2 class="py-5 text-gray-200">Never use an insecure password.</h2>
         </div>
+        <!-- Password Length & Generate Button -->
         <div class="flex flex-col justify-center items-center font-semibold text-lg gap-4 py-5">
             <p>Password Length</p>
             <div class="flex flex-col lg:flex-row bg-slate-500 max-w-[25%] rounded-xl">
@@ -24,6 +25,7 @@
             <button id="generate" class="ease-in duration-300 text-sm bg-slate-500 px-5 py-3 mt-5 mb-10 rounded-full hover:bg-slate-600">GENERATE PASSWORDS</button>
         </div>
         <hr>
+        <!-- Generated Password -->
         <div id="pass" class="hidden flex-col gap-5 lg:flex-row justify-around items-center py-20 ">
             <div class="flex justify-between items-center text-center bg-slate-500 w-fit rounded-xl">
                 <p class="px-6" id="password1"></p>
@@ -34,6 +36,7 @@
                 <button id="copy2" class="px-5 py-5 border-l border-slate-400 rounded-xl hover:bg-slate-400 ease-in duration-300"><img class="w-4 h-4" src="img/copy.png" alt=""></button>
             </div>
         </div>
+        <!-- Generated text from API -->
         <div>
             <p id="facts" class="italic py-10 fixed bottom-1/4 right-1/4 left-1/4"></p>
         </div>
